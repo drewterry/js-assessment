@@ -54,7 +54,7 @@ exports.arraysAnswers = {
 
   count: function(arr, item) {
     return arr.reduce((count, el) => { 
-      return (el == item) ? count + 1 : count 
+      return (el == item) ? ++count : count 
     }, 0)
   },
 
