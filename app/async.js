@@ -7,11 +7,11 @@ exports.asyncAnswers = {
   },
 
   manipulateRemoteData: function(url) {
-    return new Promise(resolve => {
-      $.ajax("/data/testdata.json")
-        .then(res => 
-          resolve(res.people.map(x => x.name).sort())
-        )
-    })
+    // return new Promise(resolve => {
+    //   $.ajax("/data/testdata.json")
+    //     .then(res => 
+    //       resolve(res.people.map(x => x.name).sort())
+    //     )
+    // })
   }
 };
