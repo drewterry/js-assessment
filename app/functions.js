@@ -38,6 +38,7 @@ exports.functionsAnswers = {
   },
 
   curryIt: function(fn) {
-
+    if (fn.length === 1) return fn
+    return (x) => this.curryIt(fn.bind(this, x))
   }
 };
